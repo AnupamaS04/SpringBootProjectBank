@@ -48,7 +48,7 @@ public class TransactionService
 			BigDecimal currentBalance = user.getBalance();
 			user.setBalance(currentBalance.add(amount));
 			userRepository.save(user);
-
+            // set transaction
 			Transaction transaction = new Transaction();
 			transaction.setUser(user);
 			transaction.setTransactionType(TransactionType.DEPOSIT);

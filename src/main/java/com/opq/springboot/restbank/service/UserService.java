@@ -64,6 +64,7 @@ public class UserService {
                 return "Account successfully deleted.";
             }
         } else {
+			//throw exception
             throw new ResourceNotFoundException("User not found with account number: " + accountNumber);
         }
     }
