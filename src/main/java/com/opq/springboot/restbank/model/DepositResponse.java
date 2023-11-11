@@ -23,7 +23,7 @@ public class DepositResponse {
 		return message;
 	}
 
-	//set message
+	//set message in string format
 	public void setMessage(String message) {
 		this.message = message;
 	}
